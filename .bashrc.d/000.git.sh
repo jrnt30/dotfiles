@@ -1,16 +1,4 @@
 # Git State
-if which brew >/dev/null 2>&1 ; then
-    [ -f $(brew --prefix)/share/gitprompt.sh ] && GIT_PROMPT_THEME=Default . $(brew --prefix)/share/gitprompt.sh
-fi
-export GIT_PS1_SHOWDIRTYSTATE=true
-# Set PS1 for GIT status/branch info
-green=$(tput setaf 2)
-blue=$(tput setaf 4)
-bold=$(tput bold)
-red=$(tput setaf 1)
-reset=$(tput sgr0)
-PS1='\u@\[$green\]\h\[$reset\]:\w\[$blue\]$(__git_ps1)\[$reset\] \$ '
-
 alias g='git'
 alias ga='git add'
 alias gap='git add --all --patch'

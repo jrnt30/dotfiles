@@ -1,0 +1,8 @@
+[git_status]
+show_sync_count = true
+
+[kubernetes]
+disabled = false
+
+[aws]
+displayed_items = "profile"
