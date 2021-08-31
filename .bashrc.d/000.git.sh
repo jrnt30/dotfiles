@@ -15,3 +15,7 @@ alias gs='git status'
 alias gu='git add --update'
 alias gus='git unstage'
 alias gl='git quicklog'
+alias gitCron='git branch --sort=-committerdate'
+gch() {
+ git checkout "$(git branch --all | fzf| tr -d '[:space:]')"
+}

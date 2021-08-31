@@ -37,3 +37,5 @@ alias tree="tree -F -A -I CVS"
 alias vi='vim'
 
 ulimit -c 0
+if [ -e /Users/jnauman/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/jnauman/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
+export PATH="/usr/local/sbin:$PATH"
